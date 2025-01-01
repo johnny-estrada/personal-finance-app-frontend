@@ -25,15 +25,15 @@ export default function Overview() {
             <DataDisplay />
             <div className="flex py-8 gap-6">
               <div className="flex flex-col gap-6 min-w-[60%]">
-                <Card title="Pots" link="See Details" href="/">
+                <Card title="Pots" link="See Details" href="/pots">
                   <TotalSaved />
                 </Card>
-                <Card title="Transactions" link="View All" href="/">
+                <Card title="Transactions" link="View All" href="/transactions">
                   <StackedList />
                 </Card>
               </div>
               <div className="flex flex-col gap-6 min-w-[38%]">
-                <Card title="Budgets" link="See Details" href="/">
+                <Card title="Budgets" link="See Details" href="/budgets">
                   <div className="flex items-center">
                     <PieCharts />
                     <div className="flex flex-3 flex-col gap-4">
@@ -61,11 +61,15 @@ export default function Overview() {
                   </div>
                 </Card>
 
-                <Card title="Recurring Bills" link="See Details" href="/">
+                <Card
+                  title="Recurring Bills"
+                  link="See Details"
+                  href="/recurring-bills"
+                >
                   <div className="flex flex-col gap-3">
-                    {/* <SeparateCards />
                     <SeparateCards />
-                    <SeparateCards /> */}
+                    <SeparateCards />
+                    <SeparateCards />
                   </div>
                 </Card>
               </div>
