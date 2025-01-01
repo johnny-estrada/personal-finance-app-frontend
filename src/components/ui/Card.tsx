@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 type Card = {
   title: string;
@@ -13,16 +14,16 @@ export default function Card({ title, link, href, children }: Card) {
       <header className="flex justify-between px-4 py-5 sm:py-8 sm:px-8">
         {/* We use less vertical padding on card headers on desktop than on body sections */}
         <h2 className="text-xl font-bold">{title}</h2>
-        <a
+        <Link
+          to={href}
           className="flex items-center justify-center  gap-4 text-sm text-stone-500 hover:text-stone-600"
-          href={href}
         >
           {link}
           <img
             className="h-2 w-auto"
             src="src\assets\icons\icon-caret-right.svg"
           />
-        </a>
+        </Link>
       </header>
       <div className="px-4 py-5 sm:pb-8 sm:pt-0 sm:px-8">
         {/* body */}
