@@ -1,5 +1,5 @@
 import React from "react";
-import Chip from "./ui/chip";
+import Chip from "./ui/Chip";
 
 const TotalSaved = () => {
   return (
