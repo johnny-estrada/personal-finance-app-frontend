@@ -1,16 +1,16 @@
 import React from "react";
 
-interface ICard {
+type Card = {
   title: string;
   link: string;
   href: string;
   children: React.ReactNode;
-}
+};
 
-export default function Card({ title, link, href, children }: ICard) {
+export default function Card({ title, link, href, children }: Card) {
   return (
     <div className="overflow-hidden rounded-xl bg-white shadow">
-      <div className="flex justify-between px-4 py-5 sm:py-8 sm:px-8">
+      <header className="flex justify-between px-4 py-5 sm:py-8 sm:px-8">
         {/* We use less vertical padding on card headers on desktop than on body sections */}
         <h2 className="text-xl font-bold">{title}</h2>
         <a
@@ -23,7 +23,7 @@ export default function Card({ title, link, href, children }: ICard) {
             src="src\assets\icons\icon-caret-right.svg"
           />
         </a>
-      </div>
+      </header>
       <div className="px-4 py-5 sm:pb-8 sm:pt-0 sm:px-8">
         {/* body */}
         {children}
