@@ -9,6 +9,7 @@ import Header from "../components/Header";
 import PieCharts from "../components/PieGraph";
 import Chip from "../components/ui/Chip";
 import SeparateCards from "../components/ui/SeparateCards";
+import Heading from "../components/ui/Heading";
 
 export default function Overview() {
   return (
@@ -19,9 +20,7 @@ export default function Overview() {
 
         <main>
           {/* Main content */}
-          <h1 className="text-[32px] font-bold text-neutral-800 px-10">
-            Overview
-          </h1>
+          <Heading className="px-10">Overview</Heading>
           <div className="px-4 sm:px-6 lg:px-10 lg:pt-8">
             <DataDisplay />
             <div className="flex py-8 gap-6">
