@@ -6,6 +6,7 @@ import {
   TransitionChild,
 } from "@headlessui/react";
 import { Cog6ToothIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router";
 
 const navigation = [
   {
@@ -90,8 +91,8 @@ const Sidebar = () => {
                     <ul role="list" className="-mx-2 space-y-1">
                       {navigation.map((item) => (
                         <li key={item.name}>
-                          <a
-                            href={item.href}
+                          <Link
+                            to={item.href}
                             className={classNames(
                               item.current
                                 ? "bg-gray-800 text-white"
@@ -105,15 +106,15 @@ const Sidebar = () => {
                               className="size-6 shrink-0"
                             />
                             {item.name}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
                   </li>
 
                   <li className="mt-auto">
-                    <a
-                      href="#"
+                    <Link
+                      to="#"
                       className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm/6 font-semibold text-gray-400 hover:bg-gray-800 hover:text-white"
                     >
                       <Cog6ToothIcon
@@ -121,7 +122,7 @@ const Sidebar = () => {
                         className="size-6 shrink-0"
                       />
                       Settings
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -147,8 +148,8 @@ const Sidebar = () => {
                 <ul role="list" className="-ml-6 -mr-.5 space-y-1">
                   {navigation.map((item) => (
                     <li key={item.name}>
-                      <a
-                        href={item.href}
+                      <Link
+                        to={item.href}
                         className={classNames(
                           item.current
                             ? "bg-stone-100 text-neutral-800 border-l-4 border-teal-700"
@@ -162,15 +163,15 @@ const Sidebar = () => {
                           className="size-6 shrink-0"
                         />
                         {item.name}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </li>
 
               <li className="mt-auto">
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="group -mx-2 flex gap-x-3 rounded-md p-2 font-semibold text-zinc-400 hover:text-white"
                 >
                   <img
@@ -179,7 +180,7 @@ const Sidebar = () => {
                     className="size-6 shrink-0"
                   />
                   Minimize Menu
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
