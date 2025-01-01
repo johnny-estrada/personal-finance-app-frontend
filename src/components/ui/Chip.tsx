@@ -1,12 +1,12 @@
 import React from "react";
 
-interface IChip {
+type Chip = {
   title: string;
   amount: string;
   color: string;
-}
+};
 
-const Chip = ({ title, amount, color }: IChip) => {
+const Chip = ({ title, amount, color }: Chip) => {
   return (
     <div className={`border-l-4 ${color} px-4`}>
       <p className="text-xs text-stone-500 pb-1">{title}</p>
