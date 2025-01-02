@@ -1,8 +1,7 @@
-import React from "react";
-
-import Sidebar from "../components/Sidebar";
-import Header from "../components/Header";
-import Heading from "../components/ui/Heading";
+import Sidebar from "../../components/Sidebar";
+import Header from "../../components/Header";
+import Heading from "../../components/ui/Heading";
+import Table from "../../components/Table";
 
 export default function Transactions() {
   return (
@@ -15,7 +14,7 @@ export default function Transactions() {
           {/* Main content */}
           <Heading className="px-10">Transactions</Heading>
           <div className="px-4 sm:px-6 lg:px-10 lg:pt-8">
-            <div className="flex py-8 gap-6">content goes here</div>
+            <Table />
           </div>
         </main>
       </div>
