@@ -1,7 +1,6 @@
-import React from "react";
-import Chip from "./ui/Chip";
+import Chip from "../../../components/ui/Chip";
 
-const TotalSaved = () => {
+const PotsOverview = () => {
   return (
     <div className="flex gap-5">
       <div className="flex  items-center gap-2 bg-stone-100 p-5 flex-1 rounded-xl">
@@ -21,4 +20,4 @@ const TotalSaved = () => {
   );
 };
 
-export default TotalSaved;
+export default PotsOverview;
