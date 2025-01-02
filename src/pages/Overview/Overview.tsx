@@ -1,15 +1,13 @@
-import React from "react";
-
-import DataDisplay from "../components/DataDisplay";
-import Card from "../components/ui/Card";
-import Sidebar from "../components/Sidebar";
-import StackedList from "../components/StackedList";
-import TotalSaved from "../components/TotalSaved";
-import Header from "../components/Header";
-import PieCharts from "../components/PieGraph";
-import Chip from "../components/ui/Chip";
-import SeparateCards from "../components/ui/SeparateCards";
-import Heading from "../components/ui/Heading";
+import DataDisplay from "../../components/DataDisplay";
+import Card from "../../components/ui/Card";
+import Sidebar from "../../components/Sidebar";
+import StackedList from "../../components/StackedList";
+import TotalSaved from "./components/PotsOverview";
+import Header from "../../components/Header";
+import PieCharts from "../../components/PieGraph";
+import Chip from "../../components/ui/Chip";
+import SeparateCards from "../../components/ui/SeparateCards";
+import Heading from "../../components/ui/Heading";
 
 export default function Overview() {
   return (

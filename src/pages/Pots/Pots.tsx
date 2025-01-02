@@ -1,8 +1,6 @@
-import React from "react";
-
-import Sidebar from "../components/Sidebar";
-import Header from "../components/Header";
-import Heading from "../components/ui/Heading";
+import Sidebar from "../../components/Sidebar";
+import Header from "../../components/Header";
+import Heading from "../../components/ui/Heading";
 
 export default function Pots() {
   return (
