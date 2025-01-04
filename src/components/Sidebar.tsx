@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Navigation from "./ui/Navigation";
 import MobileNavigation from "./ui/MobileNavigation";
 import Logo from "./ui/Logo";
@@ -11,7 +12,9 @@ const Sidebar = () => {
         {/* Sidebar component, swap this element with another sidebar if you like */}
         <div className="flex grow flex-col gap-y-5 overflow-y-auto bg-neutral-800 px-6 pb-4 rounded-r-2xl">
           <div className="flex lg:px-3 lg:py-10 shrink-0">
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <Navigation />
         </div>
