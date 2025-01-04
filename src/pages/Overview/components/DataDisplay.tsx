@@ -1,6 +1,3 @@
-import React from "react";
-import data from "../api/data.json";
-
 const stats = [
   { name: "Current Balance", stat: "$4,836.00" },
   { name: "Income", stat: "$3,814.25" },
@@ -10,7 +7,6 @@ const stats = [
 export default function DataDisplay() {
   return (
     <div>
-      {/* <p>{data.balance.current}</p> */}
       <dl className="grid grid-cols-1 gap-6 sm:grid-cols-3">
         {stats.map((item, i) => {
           const isFirst = i === 0;
