@@ -49,7 +49,7 @@ const Navigation = () => {
                   to={item.href}
                   className={({ isActive }) =>
                     isActive
-                      ? "bg-stone-100 text-neutral-800 border-l-4 border-teal-700 group flex gap-x-3 rounded-r-xl px-8 py-4 font-semibold items-center"
+                      ? "bg-stone-100 text-neutral-800 border-l-4 border-teal-700 group flex gap-x-3 rounded-r-xl px-8 py-4 font-semibold items-center pointer-events-none"
                       : "text-zinc-400 hover:text-white group flex gap-x-3 rounded-r-xl px-8 py-4 font-semibold items-center"
                   }
                 >
