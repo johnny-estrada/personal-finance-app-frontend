@@ -7,6 +7,7 @@ export default {
   theme: {
     extend: {},
     colors: {
+      transparent: 'transparent',
       'beige-500': '#98908B',
       'beige-100': '#F8F4F0',
       'grey-900': '#201F24',
